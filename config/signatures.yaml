@@ -1,0 +1,10 @@
+# Détails des signatures d'attaques
+port_scan:
+  description: "Scan de ports TCP"  # Description de l'attaque
+  ports: "1-1024"                   # Ports typiquement scannés
+  frequency: "high"                 # Fréquence d'apparition
+
+arp_spoof:
+  description: "Empoisonnement ARP"  # Description de l'attaque
+  targets: "local network"           # Cibles typiques
+  detection: "ARP duplicate packets" # Méthode de détection

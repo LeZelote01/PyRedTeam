@@ -1,0 +1,9 @@
+# Bibliothèques essentielles
+requests==2.32.0
+scapy==2.5.0        # Manipulation de paquets réseau
+pyyaml==6.0          # Gestion des fichiers YAML
+flask==3.0.0         # Framework web pour l'API
+cryptography==41.0.7 # Chiffrement des rapports
+elasticsearch==8.11.0# Intégration avec ElasticSearch
+argcomplete==3.1.6   # Auto-complétion CLI
+elasticsearch-logging==0.1.0 #Handler pour elasticsearch

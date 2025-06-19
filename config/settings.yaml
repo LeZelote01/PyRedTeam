@@ -1,0 +1,18 @@
+# Configuration générale
+default:
+  log_level: INFO  # Niveau de journalisation par défaut
+  elasticsearch:
+    host: "localhost:9200"  # Adresse du cluster ElasticSearch
+    index: "pyredteam-logs"  # Nom de l'index pour les logs
+  encryption_key: ""  # Clé de chiffrement par défaut
+
+# Paramètres du mode furtif
+covert_mode:
+  packet_delay: 0.5-2.0  # Délai aléatoire entre les paquets
+  mac_rotation: true      # Rotation des adresses MAC
+  dns_override: false     # Désactive la modification DNS
+
+# Signatures d'attaques
+signatures:
+  arp_spoof: "ARP Spoofing Attack Pattern"  # Signature ARP
+  port_scan: "Reconnaissance TCP Scan"      # Signature scan de ports

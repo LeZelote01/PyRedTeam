@@ -1,0 +1,8 @@
+logs/          # Dossier des logs
+reports/       # Dossier des rapports
+__pycache__/   # Cache Python
+*.pyc          # Fichiers compilés Python
+.env           # Variables d'environnement
+*.key          # Clés de chiffrement
+*.log          # Fichiers log
+.git           # Fichier git
