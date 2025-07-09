@@ -60,7 +60,8 @@ docker run --net=host pyredteam \
 docker run --net=host pyredteam \
   --run port_scan \
   --target 192.168.1.1 \
-  --params "ports=1-1024"
+  --ports 1-1024 \
+  --output scan_results.json
 
 # Exécuter un ARP Spoof
 docker run --net=host pyredteam \

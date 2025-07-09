@@ -6,7 +6,7 @@ class Attack:
         # Initialisation du logger
         self.logger = Logger("ScheduledTask")
 
-    def setup(self, task_name, command, trigger="hourly"):
+    def setup(self, task_name, command, trigger="hourly", **kwargs):
         """Configuration de la tâche"""
         # Stockage des paramètres
         self.task_name = task_name

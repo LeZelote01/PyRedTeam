@@ -6,7 +6,11 @@ class Attack:
         # Initialisation du logger
         self.logger = Logger("PasswordSpray")
 
-    def setup(self, target_url, usernames, passwords, user_agent="PyRedTeam"):
+    def setup(self, target_url, usernames=None, passwords=None, user_agent="PyRedTeam", **kwargs):
+        if usernames is None:
+            usernames = ["admin", "administrator"]
+        if passwords is None:
+            passwords = ["password", "admin123"]
         """Configuration de l'attaque"""
         # Stockage des paramètres
         self.target_url = target_url
